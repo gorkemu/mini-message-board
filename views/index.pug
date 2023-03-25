@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  a(href="/new"): button="Send a new message"
+  h2= "Messages"
+  div
+    each message in messages 
+      h3= message.text 
+      p= message.user
+      p= message.added
