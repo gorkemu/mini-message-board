@@ -8,5 +8,5 @@ block content
     each message in messages 
       div.message
         h3= message.text 
-        p= message.user
-        p= message.added
+        p.user= message.user
+        p.date= message.added
