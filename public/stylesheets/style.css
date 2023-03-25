@@ -18,7 +18,22 @@ button {
   box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
   padding: 2px 8px;
   cursor: pointer;
-  font-size: larger;
+  font-size: 16px;
+  background-color: #FFD814;
+  border: 1px solid #FCD200;
+  color: #0F1111;
+  transition: all 0.2s ease-out;
+}
+
+button:hover {
+  background-color: #F7CA00;
+  border-color: #F2C200;
+}
+
+button:active {
+  background-color: #F0B800;
+  border-color: #008296;
+  box-shadow: 0 0 0 3px #c8f3fa, inset 0 0 0 2px #fff;
 }
 
 form {
@@ -48,6 +63,12 @@ input {
   border: 1px solid black;
   padding: 8px;
   border-radius: 5px;
+  background-color: white;
+}
+
+.user {
+  font-style: italic;
+  font-size: 15px;
 }
 
 
