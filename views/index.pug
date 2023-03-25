@@ -4,8 +4,9 @@ block content
   h1= title
   a(href="/new"): button="Send a new message"
   h2= "Messages"
-  div
+  div.messages
     each message in messages 
-      h3= message.text 
-      p= message.user
-      p= message.added
+      div.message
+        h3= message.text 
+        p= message.user
+        p= message.added
