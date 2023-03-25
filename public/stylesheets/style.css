@@ -1,8 +1,53 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #EAEDED;
+  margin: 0 auto;
 }
 
-a {
-  color: #00B7FF;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+button {
+  width: 250px;
+  height: 50px;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: larger;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: larger;
+}
+
+.messages {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.message {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
