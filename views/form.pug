@@ -4,6 +4,6 @@ block content
   main
     h1= title
     form(method="POST" action="/new")
-      input(type="text" name="text" placeholder="What's on your mind?")
-      input(type="text" name="user" placeholder="Your name")
+      input(type="text" name="text" placeholder="What's on your mind?" required)
+      input(type="text" name="user" placeholder="Your name" required)
       button="Send"
